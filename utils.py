@@ -98,3 +98,6 @@ class Logger(object):
         self.log_file.write(msg + '\n')
         self.log_file.flush()
         print(msg)
+
+#gives number of parameters in the network        
+npars = lambda model: sum(p.numel() for p in model.parameters()    
